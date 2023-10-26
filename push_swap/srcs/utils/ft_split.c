@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jtorreir <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jtorreir <jtorreir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/30 14:17:02 by jtorreir          #+#    #+#             */
-/*   Updated: 2022/11/30 17:02:38 by jtorreir         ###   ########.fr       */
+/*   Updated: 2023/10/26 17:27:51 by jtorreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../includes/push_swap.h"
 
 static char	*ft_wordlen(const char *w, int inicio, int fim)
 {
