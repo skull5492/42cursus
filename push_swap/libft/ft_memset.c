@@ -1,28 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jtorreir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/06 16:08:59 by jtorreir          #+#    #+#             */
-/*   Updated: 2023/01/06 16:09:02 by jtorreir         ###   ########.fr       */
+/*   Created: 2022/11/17 22:07:00 by jtorreir          #+#    #+#             */
+/*   Updated: 2022/11/30 13:13:26 by jtorreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#include "libft.h"
 
-# ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 42
-# endif
+void	*ft_memset(void *str, int c, size_t a)
+{
+	size_t			i;
+	unsigned char	*ptr;
 
-# include <unistd.h>
-# include <stddef.h>
-# include <stdlib.h>
-
-char	*get_next_line(int fd);
-size_t	ft_strlen(char *str);
-char	*ft_strjoin(char *s1, char *s2);
-int		ft_managed_files(char *s1);
-#endif
+	i = 0;
+	ptr = (unsigned char *)str;
+	while (i < a)
+	{
+		*ptr = (unsigned char)c;
+		i++;
+		ptr++;
+	}
+	return (str);
+}

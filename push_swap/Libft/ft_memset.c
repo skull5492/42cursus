@@ -1,36 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jtorreir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/06 16:08:31 by jtorreir          #+#    #+#             */
-/*   Updated: 2023/01/06 16:08:36 by jtorreir         ###   ########.fr       */
+/*   Created: 2022/11/17 22:07:00 by jtorreir          #+#    #+#             */
+/*   Updated: 2022/11/30 13:13:26 by jtorreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "libft.h"
 
-char	*get_next_line(int fd)
+void	*ft_memset(void *str, int c, size_t a)
 {
-	static char	bruh[BUFFER_SIZE + 1];
-	int			i;
-	char		*line;
+	size_t			i;
+	unsigned char	*ptr;
 
 	i = 0;
-	if (BUFFER_SIZE < 1 || read(fd, 0, 0) < 0)
+	ptr = (unsigned char *)str;
+	while (i < a)
 	{
-		while (bruh[i])
-			bruh[i++] = 0;
-		return (NULL);
+		*ptr = (unsigned char)c;
+		i++;
+		ptr++;
 	}
-	line = NULL;
-	while (bruh[0] || read(fd, bruh, BUFFER_SIZE) > 0)
-	{
-		line = ft_strjoin(line, bruh);
-		if (ft_managed_files(bruh))
-			break ;
-	}
-	return (line);
+	return (str);
 }
