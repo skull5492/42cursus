@@ -42,7 +42,7 @@ void   swap_stack_b(long, *stack_b, int *stack_b_numbers)
     write(1, "Swap Stack B\n", 13);
 }
 
-void    swap_both_stacks(long *stack_a, long *stack_b, int *stack_a_numbers, int *stack_b_numbers)
+void   swap_both_stacks(long *stack_a, long *stack_b, int *stack_a_numbers, int *stack_b_numbers)
 {
     long *temp3
 
