@@ -35,4 +35,5 @@ void    swap_stack_b(long, *stack_b, int *stack_b_numbers);
 void    swap_both_stacks(long *stack_a, long *stack_b, int *stack_a_numbers, int *stack_b_numbers);
 
 void    sort_3_numbers(long *stack_a, int *stack_a_numbers);
+void	sort_5_numbers(long *stack_a, long *stack_b, int *stack_a_numbers, int *stack_b_numbers);
 #endif
