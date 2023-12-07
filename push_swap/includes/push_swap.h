@@ -26,9 +26,9 @@ void    reverse_rotate_stack_a(long *stack_a, int *stack_a_numbers);
 void    reverse_rotate_stack_b(long *stack_b, int *stack_b_numbers);
 void    reverse_both_stacks(long *stack_a, long *stack_b, int *stack_a_numbers, int *stack_b_numbers);
 
-void	rotate_stack_a(long *stack_a, int *numbers_in_stack_a);
-void	rotate_stack_b(long *stack_b, int *numbers_in_stack_b);
-void	rotate_stack_a_and_stack_b(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *numbers_in_stack_b);
+void	rotate_stack_a(long *stack_a, int *stack_a_numbers);
+void	rotate_stack_b(long *stack_b, int *stack_b_numbers);
+void	rotate_stack_a_and_stack_b(long *stack_a, long *stack_b, int *stack_a_numbers, int *stack_b_numbers);
 
 void    swap_stack_a(long *stack_a, int *stack_a_numbers);
 void    swap_stack_b(long, *stack_b, int *stack_b_numbers);
@@ -37,4 +37,14 @@ void    swap_both_stacks(long *stack_a, long *stack_b, int *stack_a_numbers, int
 void    sort_3_numbers(long *stack_a, int *stack_a_numbers);
 void	sort_5_numbers(long *stack_a, long *stack_b, int *stack_a_numbers, int *stack_b_numbers);
 void	sort_beyond_3_and_5_numbers(long *stack_a, long *stack_b, int *stack_a_numbers, int *stack_b_numbers);
+
+char	**ft_split(char const *str, char c);
+
+int		ft_strlen(const char *str);
+int		number_limits(long *stack_a, int stack_a_numbers);
+int		dupe_numbers(long *stack_a, int stack_a_numbers);
+int		stack_number_check(char *numbers);
+int		stack_size(int argc, char **argv);
+int		seperating_input_numbers(long *stack_a, int *stack_a_numbers, char **argv);
+int		sort_stack_check(long *stack_a, int *stack_a_numbers);
 #endif
