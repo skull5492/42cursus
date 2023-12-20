@@ -33,7 +33,7 @@ void    stack_a_push(long *stack_a, long *stack_b, int *stack_a_numbers, int *st
     (*stack_b_numbers)--;
     if (*stack_b_numbers == 0)
         stack_b = NULL;
-    write(1, "Push Stack A\n", 13); 
+    write(1, "pa\n", 4); 
 }
 
 void    stack_b_push(long *stack_a, long *stack_b, int *stack_a_numbers, int *stack_b_numbers)
@@ -57,5 +57,5 @@ void    stack_b_push(long *stack_a, long *stack_b, int *stack_a_numbers, int *st
     (stack_a_numbers[1])--;
     if (stack_a_numbers[1] == 0)
         stack_a = NULL;
-    write(1, "Push Stack B\n", 13); 
+    write(1, "pb\n", 4); 
 }
