@@ -66,7 +66,7 @@ int	dupe_numbers(long *stack_a, int stack_a_numbers)
 	return (0);
 }
 
-void	ft_reloc(long *pointer, int startsize, int newsize)
+/*void	ft_reloc(long *pointer, int startsize, int newsize)
 {
 	int		i;
 	long	*temp;
@@ -92,7 +92,7 @@ void	ft_reloc(long *pointer, int startsize, int newsize)
 		}
 		pointer = temp;
 	}
-}
+}*/
 
 void	parameters(long *stack_a, long *stack_b, int *stack_a_numbers, int *stack_b_numbers)
 {
