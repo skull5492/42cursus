@@ -14,7 +14,7 @@
 # define PUSH_SWAP_H
 
 # include <unistd.h>
-# include <string.>
+# include <string.h>
 # include <stdlib.h>
 # include <stdio.h>
 # include <errno.h>

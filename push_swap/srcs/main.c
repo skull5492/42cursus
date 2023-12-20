@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/push_swap.h"
+#include "../push_swap.h"
 
 void	free_and_exit(int *stack_a_numbers, int *stack_b_numbers)
 {
