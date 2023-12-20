@@ -27,7 +27,7 @@ void    reverse_rotate_stack_a(long *stack_a, int *stack_a_numbers)
 	}
 	stack_a[0] = *temp;
 	free(temp);
-	write(1, "rra\n", 5);
+	write(1, "rra\n", 4);
 }
 
 void    reverse_rotate_stack_b(long *stack_b, int *stack_b_numbers)
@@ -45,7 +45,7 @@ void    reverse_rotate_stack_b(long *stack_b, int *stack_b_numbers)
 	}
 	stack_b[0] = *temp;
 	free(temp);
-	write(1, "rrb\n", 5);
+	write(1, "rrb\n", 4);
 }
 
 void    reverse_both_stacks(long *stack_a, long *stack_b, int *stack_a_numbers, int *stack_b_numbers)
@@ -71,5 +71,5 @@ void    reverse_both_stacks(long *stack_a, long *stack_b, int *stack_a_numbers, 
 	}
 	stack_b[*stack_b_numbers - 1] = *temp;
 	free(temp);
-	write(1, "rrr\n", 5);
+	write(1, "rrr\n", 4);
 }
