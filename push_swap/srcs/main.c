@@ -19,7 +19,7 @@ void	free_and_exit(int *stack_a_numbers, int *stack_b_numbers)
 	exit(0);
 }
 
-void	free_and_exit_without_errors(int *stack_a_numbers, int *stack_b_numbers)
+void	free_and_exit_errors(int *stack_a_numbers, int *stack_b_numbers)
 {
 	free(stack_a_numbers);
 	free(stack_b_numbers);
@@ -39,17 +39,17 @@ void	check_parameters(int argc, char **argv, int *stack_a_numbers, int *stack_b_
 	while (i < argc)
 	{
 		if ((argv[i][ft_strlen(argv[i]) - 1] == ' ') || (argv[i][0] == ' '))
-			free_and_exit_without_errors(stack_a_numbers, stack_b_numbers);
+			free_and_exit_errors(stack_a_numbers, stack_b_numbers);
 		j = 0;
 		while (j < ft_strlen(argv[i]))
 		{
 			if (((argv[i][j] < 48) || (argv[i][j] > 57)) && (argv[i][j] != 32))
 			{
 				if (argv[i][j] != 45)
-					free_and_exit_without_errors(stack_a_numbers, stack_b_numbers);
+					free_and_exit_errors(stack_a_numbers, stack_b_numbers);
 			}
 			if ((argv[i][j] == 32) && (argv[i][j + 1] == 32))
-				free_and_exit_without_errors(stack_a_numbers, stack_b_numbers);
+				free_and_exit_errors(stack_a_numbers, stack_b_numbers);
 			j++;
 		}
 		i++;
