@@ -22,7 +22,7 @@ void    reverse_rotate_stack_a(long *stack_a, int *stack_a_numbers)
 	*temp = stack_a[stack_a_numbers[1] - 1];
 	while (i > 0)
 	{
-		stack_a[1] = stack_a[i - 1];
+		stack_a[i] = stack_a[i - 1];
 		i--;
 	}
 	stack_a[0] = *temp;
@@ -40,7 +40,7 @@ void    reverse_rotate_stack_b(long *stack_b, int *stack_b_numbers)
 	*temp = stack_b[*stack_b_numbers - 1];
 	while (i > 0)
 	{
-		stack_b[1] = stack_b[i - 1];
+		stack_b[i] = stack_b[i - 1];
 		i--;
 	}
 	stack_b[0] = *temp;
