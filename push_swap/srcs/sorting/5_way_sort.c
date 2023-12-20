@@ -18,11 +18,11 @@ void    stack_a_rotation(long *stack_a, int *stack_a_numbers)
     rotate_stack_a(stack_a, stack_a_numbers);
 }
 
-void    stack_a_reverse_rotation(long *stack_a, int *stack_a_numbers)
+/*void    stack_a_reverse_rotation(long *stack_a, int *stack_a_numbers)
 {
     reverse_rotate_stack_a(stack_a, stack_a_numbers);
     reverse_rotate_stack_a(stack_a, stack_a_numbers);
-}
+}*/
 
 void    first_stack(long *stack_a, long *stack_b, int *stack_a_numbers, int *stack_b_numbers)
 {
