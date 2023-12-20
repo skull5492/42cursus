@@ -69,7 +69,7 @@ void	second_stack(long *stack_a, long *stack_b, int *stack_a_numbers, int *stack
 	{
 		reverse_rotate_stack_a(stack_a, stack_a_numbers);
 		stack_a_push(stack_a, stack_b, stack_a_numbers, stack_b_numbers);
-		rotate_stack_a_radix(stack_a, stack_a_numbers);
+		stack_a_rotation(stack_a, stack_a_numbers);
 	}
 	else if (stack_b[0] > stack_a[3])
 		parameters(stack_a, stack_b, stack_a_numbers, stack_b_numbers);
