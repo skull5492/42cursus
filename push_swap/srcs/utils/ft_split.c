@@ -12,7 +12,7 @@
 
 #include "../../includes/push_swap.h"
 
-static void	ft_freeup(char *strs)
+static void	ft_freestr(char *strs)
 {
 	int	i;
 
@@ -107,7 +107,7 @@ char	**ft_split(char const *str, char c)
 		strs[i] = ft_stralloc(((char *)str), c, &pos);
 		if (strs[i] == NULL)
 		{
-			ft_freeup(strs[i]);
+			ft_freestr(strs[i]);
 		}
 		i++;
 	}
